@@ -23,6 +23,7 @@
             // Set up ADAL
             var authContext = new AuthenticationContext({
                 clientId: '9624a483-5297-45f7-91da-a8ec0e75798b',
+                redirectUri: window.top.location.origin + "/x_dtll2_contentint_LoginNoPopUpRedirect.do",
                // postLogoutRedirectUri: 'http://bl.ocks.org/psignoret/raw/50e88652ae5cb6cc157c09857e3ba87f/'
             });
 
