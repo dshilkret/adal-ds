@@ -20,9 +20,9 @@
             // Set up ADAL
             var authContext = new AuthenticationContext({
                 clientId: '9624a483-5297-45f7-91da-a8ec0e75798b',
-                redirectUri: 'https://ven02714.service-now.com/sp?id=adal_debug'
+                redirectUri: 'https://adal-ds.vercel.app',
                 //redirectUri: window.top.location.origin + "/x_dtll2_contentint_LoginNoPopUpRedirect.do",
-               // postLogoutRedirectUri: 'http://bl.ocks.org/psignoret/raw/50e88652ae5cb6cc157c09857e3ba87f/'
+                postLogoutRedirectUri: 'https://adal-ds.vercel.app/'
             });
 
             // Make an AJAX request to the Microsoft Graph API and print the response as JSON.
