@@ -7,10 +7,7 @@
         <script src="https://secure.aadcdn.microsoftonline-p.com/lib/1.0.11/js/adal.min.js"></script>
     </head>
     <body>
-        <p>
-            A minimal sample app using ADAL.JS and vanilla JavaScript to obtain 
-            an access token from Azure Active Directory and make an API request.
-        </p>
+  
         <p>
             <a href="#" onclick="authContext.login(); return false;">Log in</a> |
             <a href="#" onclick="authContext.logOut(); return false;">Log out</a>
@@ -23,7 +20,8 @@
             // Set up ADAL
             var authContext = new AuthenticationContext({
                 clientId: '9624a483-5297-45f7-91da-a8ec0e75798b',
-                redirectUri: window.top.location.origin + "/x_dtll2_contentint_LoginNoPopUpRedirect.do",
+                redirectUri: 'https://ven02714.service-now.com/sp?id=adal_debug'
+                //redirectUri: window.top.location.origin + "/x_dtll2_contentint_LoginNoPopUpRedirect.do",
                // postLogoutRedirectUri: 'http://bl.ocks.org/psignoret/raw/50e88652ae5cb6cc157c09857e3ba87f/'
             });
 
